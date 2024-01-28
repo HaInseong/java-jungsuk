@@ -1,7 +1,7 @@
 package ch6;
 
 public class TvTest2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Tv t1 = new Tv();
         Tv t2 = new Tv();
         System.out.println("t1의 channel 값은 " + t1.channel + "입니다.");
