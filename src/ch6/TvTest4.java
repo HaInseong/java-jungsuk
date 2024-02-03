@@ -12,6 +12,5 @@ public class TvTest4 {
             tvArr[i].channelUp();
             System.out.printf("tvArr[%d].channel=%d%n", i, tvArr[i].channel);
         }
-        System.out.println("아 잔디 날라감");
     }
 }
