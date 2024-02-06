@@ -44,7 +44,11 @@ public class Ex7_8 {
     public static void main(String[] args) {
         Buyer b = new Buyer();
 
+        Product p = new Tv1();
+        b.buy(p);
+        //위의 두 줄이 아래 한 줄과 같음.
         b.buy(new Tv1());
+
         b.buy(new Computer());
 
         System.out.println("현재 남은 돈은 " + b.money + "만원입니다.");
