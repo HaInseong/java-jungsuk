@@ -30,7 +30,7 @@ class Point {
         this.x = x;
         this.y = y;
     }
-    Point() {
+    Point() { //어디에서 사용되는지?
         this(0, 0);
     }
     String getXY() {
@@ -41,7 +41,7 @@ class Circle2 extends Shape {
     Point center;
     int r;
 
-    Circle2() {
+    Circle2() { //어디에서 사용되는지?
         this(new Point(0, 0), 100);
     }
     Circle2(Point center, int r) { //Circle2() 생성자에서 Point 객체 생성해서 이 생성자 매개변수로 넘김.
