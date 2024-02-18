@@ -11,7 +11,7 @@ public class Ex6_8 {
         System.out.println("d 참조 변수의 주소값 = " + d);
         System.out.println("d2.x = " + d2.x);
         System.out.println("d2 참조 변수의 주소값 = " + d2);
-
+        System.out.println();
 
     }
 
