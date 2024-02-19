@@ -14,6 +14,7 @@ public class Ex6_6 {
 
     static void change(int x) {
         x = 1000;
+        System.out.println("매개변수로 x 값을 받음");
         System.out.println("change() : x = " + x);
     }
 }
