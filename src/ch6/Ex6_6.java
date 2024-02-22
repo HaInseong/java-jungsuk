@@ -9,7 +9,7 @@ public class Ex6_6 {
 
         change(d.x);
         System.out.println("After change(d.x)");
-        System.out.println("main() : x = " + d.x); 
+        System.out.println("main() : x = " + d.x);
     }
 
     static void change(int x) {

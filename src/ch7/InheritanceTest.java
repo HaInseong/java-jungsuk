@@ -24,7 +24,7 @@ public class InheritanceTest {
         System.out.println(c.r);
         System.out.println(c.p.y);
         System.out.println(c.toString());
-        //Object.toString() = '클래스 이름 @ 객체 주소값' 출력함.
+        //Object.toString() = 'className@addressOfObj' 출력함.
         System.out.println(c2.toString()); //객체마다 주소값 다름을 볼 수 있음.
         System.out.println(c);
         System.out.println(c2);
