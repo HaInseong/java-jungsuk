@@ -4,7 +4,7 @@ class Data1 { int x;}
 public class Ex6_6 {
     public static void main(String[] args) {
         Data1 d = new Data1();
-        d.x = 10;
+        d.x = 101;
         System.out.println("main() : x = " + d.x);
 
         change(d.x);
