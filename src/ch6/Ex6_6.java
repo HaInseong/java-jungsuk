@@ -18,6 +18,5 @@ public class Ex6_6 {
         System.out.println("change() : x = " + x);
         System.out.println();
         System.out.println();
-        System.out.println( );
     }
 }
