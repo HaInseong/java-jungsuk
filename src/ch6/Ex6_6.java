@@ -17,5 +17,6 @@ public class Ex6_6 {
         System.out.println("매개변수로 x 값을 받음");
         System.out.println("change() : x = " + x);
         System.out.println("git commit 3/10");
+        System.out.println("git commit 3/11");
     }
 }
