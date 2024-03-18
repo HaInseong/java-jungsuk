@@ -1,7 +1,10 @@
 package ch6;
 
 class Data2 { int x;}
-public class Ex6_7 {
+
+//기본형 매개변수 = read only
+//참조형 매개변수 = read & write
+public class Ex6_7_참조형_매개변수_스택그리기 {
     public static void main(String[] args) {
         Data2 d = new Data2();
         d.x = 10;
