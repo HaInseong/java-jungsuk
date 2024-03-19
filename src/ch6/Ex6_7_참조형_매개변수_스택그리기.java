@@ -2,8 +2,8 @@ package ch6;
 
 class Data2 { int x;}
 
-//기본형 매개변수 = read only
-//참조형 매개변수 = read & write
+//기본형 매개변수 = Read Only
+//참조형 매개변수 = Read & Write
 public class Ex6_7_참조형_매개변수_스택그리기 {
     public static void main(String[] args) {
         Data2 d = new Data2();
