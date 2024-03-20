@@ -7,7 +7,7 @@ class Tv {
 
     void power() {
         power = !power;
-    } //power 변수의 현재 값을 반전 시킨다.
+    } //power 변수의 현재 값을 반전 시켜서 새로 대입.
     //power가 true 이면 false로, false이면 true로 변경
 
     void channelUp() {

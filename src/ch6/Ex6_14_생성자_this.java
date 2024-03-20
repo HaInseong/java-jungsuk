@@ -30,7 +30,7 @@ class Car {
     }
 }
 
-public class Ex6_14_생성자this {
+public class Ex6_14_생성자_this {
     public static void main(String[] args) {
         Car c1 = new Car();
         System.out.println(c1.color);
