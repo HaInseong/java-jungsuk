@@ -1,11 +1,14 @@
 package ch7;
+
 class Tv {
     boolean power;
     int channel;
 
+
     void power() {
         power = !power;
-    }
+    } //power 변수의 현재 값을 반전 시킨다.
+    //power가 true 이면 false로, false이면 true로 변경
 
     void channelUp() {
         ++channel;
@@ -15,6 +18,7 @@ class Tv {
         --channel;
     }
 }
+
 class SmartTv extends Tv {
     boolean caption;
     void displayCaption(String text) {
@@ -23,7 +27,7 @@ class SmartTv extends Tv {
         }
     }
 }
-public class Ex7_1 {
+public class Ex7_1_상속 {
     public static void main(String[] args) {
         SmartTv stv = new SmartTv();
         stv.channel = 10;

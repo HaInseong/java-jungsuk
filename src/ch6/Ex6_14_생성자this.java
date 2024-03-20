@@ -41,6 +41,6 @@ public class Ex6_14_생성자this {
         System.out.println(c2.color);
         System.out.println(c2.gearType);
         System.out.println(c2.door);
-        System.out.println(c1.color);
+        System.out.println("다른 객체에 담겨 있는 변수 c1.color = " + c1.color);
     }
 }

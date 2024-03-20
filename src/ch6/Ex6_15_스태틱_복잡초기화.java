@@ -11,4 +11,5 @@ public class Ex6_15_스태틱_복잡초기화 {
             arr[i] = (int)(Math.random()*10)+1;
         }
     }
+
 }
