@@ -29,13 +29,15 @@ public class Ex7_3_포함관계 {
         System.out.println(c.p.x);
         System.out.println(c.r);
         System.out.println(c.p.y);
-        System.out.println(c.toString());
-        //Object.toString() = 'className@addressOfObj' 출력함.
-        System.out.println(c2.toString()); //객체마다 주소값 다름을 볼 수 있음.
+
+        System.out.println(c.toString()); //Object 조상 객체에는 11개의 기본 메서드가 정의되어 있다.
+        //Object.toString() = 'className@addressOfObj' 출력.
+        System.out.println(c2.toString()); //객체마다 주소값 다르다는 걸 알 수 있다.
+
         System.out.println(c);
         System.out.println(c2);
         //toString() 생략해도 결과는 똑같이 출력됨.
-        //println 메서드의 기능임. 참조변수가 매개변수로 들어오면 자동으로 toString()를 호출함.
+        //println 메서드에 정의된 기능으로 참조변수가 매개변수로 들어오면 자동으로 toString()를 호출한다.
     }
 }
 
