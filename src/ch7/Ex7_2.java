@@ -1,6 +1,6 @@
 package ch7;
 
-
+//March 22, 2024
 public class Ex7_2 {
     public static void main(String[] args) {
         Point[] p = {
