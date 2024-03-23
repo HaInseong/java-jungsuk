@@ -3,7 +3,7 @@ package ch7;
 
 //참조변수 super
 class Parent {
-    int x; //super.x
+    int x; //Child클래스 기준 super.x
     int y;
 
     Parent(){}
@@ -12,22 +12,23 @@ class Parent {
         this.y = y;
     }
 }
+
 class Child extends Parent {
     int x = 20; //this.x
-    //조상과 이름이 같아도 선언이 되고, 둘 다 super, this 참조 변수로 각각 가르키게 된다.
+    //조상과 이름이 같아도 새롭게 선언이 가능하다.
+    //super, this 참조 변수로 각각 가르키게 된다.
 
     int z;
 
 
     /*
-    조상의 생성자
-    생성자의 첫 줄에 반드시 생성자를 호출해야 한다.
+    상속 시 조상의 생성자를 생성자의 첫 줄에 반드시 생성자를 호출해야 한다.
     그렇지 않으면 컴파일러가 생성자의 첫 줄에 super();를 자동으로 삽입
     */
     Child(int x, int y, int z) {
-        //this.x = x; 노노
-        //this.y = y; 노노
-        super(x, y); //★조상에 생성자 정의되어 있으니 조상멤버 초기화는 조상이 직접하도록 해야한다.
+        //this.x = x; 초기화는 직접 조상이 하도록
+        //this.y = y;
+        super(x, y); //★조상이 정의된 생성자를 가지고 있으니 조상멤버 초기화는 조상이 직접하도록 해야한다.
         this.z = z;
     }
 
@@ -38,7 +39,7 @@ class Child extends Parent {
         System.out.println("z=" + z);
     }
 }
-//March 22, 2024
+
 public class Ex7_2_this와super {
     public static void main(String[] args) {
 
@@ -85,7 +86,7 @@ class Circle2 extends Shape {
     Point center;
     int r;
 
-    Circle2() { //어디에서 사용되는지?
+    Circle2() {
         this(new Point(0, 0), 100);
     }
     Circle2(Point center, int r) { //Circle2() 생성자에서 Point 객체 생성해서 이 생성자 매개변수로 넘김.

@@ -9,7 +9,7 @@ class MyPoint2 {
 
     public String toString() { //public을 붙인 이유 = 오버라이딩 하려면 선언부가 똑같아야 한다.
         return "toString 오버라이딩 = "+ "x:"+x+", " + "y:" + y;
-        //toString 오버라이딩 해두면 iv값들을 출력하려고 참조변수로 하나씩 접근하지 않아도 된다.
+        //toString 오버라이딩 해두면 iv값들을 출력하려고, 참조변수로 하나씩 접근하지 않아도 된다.
     }
 }
 
@@ -42,7 +42,8 @@ public class Ex7_4_오버라이딩 {
 //        p3.x = 1;
 //        p3.y = 2;
 //        p3.r = 3;
-        //위에 초기화를 주석처리 한 이유 = 직접 생성자 만들어서 생성과 동시에 처리하면 된다.
+        //위에 초기화를 주석처리 한 이유는?
+        //직접 MyPoint3D클래스에 생성자를 만들어서 생성과 동시에 처리하는게 코드가 깔끔하다.
 
         System.out.println("p2의 toString 메서드로 객체 주소값 출력: " + p2);
         System.out.println("p2의 toString 메서드로 객체 주소값 출력: " + p3);
