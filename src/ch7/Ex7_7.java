@@ -1,6 +1,28 @@
 package ch7;
 
-import javax.sound.sampled.Line;
+class Car {
+    String color;
+    int door = 1;
+
+    void drive() {
+        System.out.println("붕붕~");
+    }
+    void stop() {
+        System.out.println("멈춰!!");
+    }
+}
+
+class FireEngine extends Car {
+    void water() {
+        System.out.println("불을 끄자!!");
+    }
+}
+
+class Ambulance extends Car {
+    void siren() {
+        System.out.println("불을 끄자!!");
+    }
+}
 
 public class Ex7_7 {
     public static void main(String[] args) {
@@ -25,33 +47,5 @@ public class Ex7_7 {
         FireEngine fe3 = (FireEngine) c; //멤버 갯수 5개 <- 멤버 갯수 4개
 //        fe3.drive();
         fe3.water();
-
-
-
-
-    }
-}
-
-class Car {
-    String color;
-    int door = 1;
-
-    void drive() {
-        System.out.println("붕붕~");
-    }
-    void stop() {
-        System.out.println("멈춰!!");
-    }
-}
-
-class FireEngine extends Car {
-    void water() {
-        System.out.println("불을 끄자!!");
-    }
-}
-
-class Ambulance extends Car {
-    void siren() {
-        System.out.println("불을 끄자!!");
     }
 }
