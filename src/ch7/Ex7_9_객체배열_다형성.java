@@ -99,7 +99,7 @@ public class Ex7_9_객체배열_다형성 {
         System.out.println("뭐가 출력될까? " + buyer.cart[0]);
 
 
-        /* 객체 배열 다형성 그림 그리기
+        /* 객체 배열 다형성 그림 그릴 수 있어야 한다.
         Product p1 = new Tv1();
         Product p2 = new Computer();
         Product p3 = new Audio();
