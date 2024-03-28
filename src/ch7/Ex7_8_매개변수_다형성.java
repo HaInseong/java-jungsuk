@@ -65,7 +65,6 @@ class Buyer {
     int money = 1000;
     int bonusPoint = 0;
 
-
     /*★ 다형성의 장점
     * buy(Product p) 메서드 하나로 여러 물건들을 다 구매하고 관리할 수 있다.*/
     void buy(Product p) {
@@ -77,6 +76,7 @@ class Buyer {
         }
         money -= p.price;
         bonusPoint += p.bonusPoint; //bonusPoint = (int)(price/10.0);
+
         System.out.println(p + "을/를 구입하셨습니다."); //★ p참조변수는 해당 클래스에 선언된 toString()메서드를 호출한다.
         System.out.println(p.toString() + "을/를 구입하셨습니다."); //★ println()메서드는 참조변수가 매개변수로 오면 자동으로 toString을 호출한다.
     }
@@ -102,3 +102,7 @@ public class Ex7_8_매개변수_다형성 {
 
     }
 }
+
+/*★ 여러 종류의 객체를 배열로 다루기
+* 보통 하나의 배열에는 같은 타입만 저장하는데,
+* 다형성을 이용하면 하나의 배열에 여러 종류의 객체를 저장할 수 있다.*/
