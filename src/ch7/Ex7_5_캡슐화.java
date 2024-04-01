@@ -29,7 +29,7 @@ class Time {
     }
 }
 
-public class TimeTest_캡슐화 {
+public class Ex7_5_캡슐화 {
     public static void main(String[] args) {
         Time t = new Time();
         t.hourTest = 100;
