@@ -1,5 +1,9 @@
 package ch7;
 
+/*★ 여러 종류의 객체를 배열로 다루기
+ * 보통 하나의 배열에는 같은 타입만 저장하는데,
+ * 다형성을 이용하면 하나의 배열에 여러 종류의 객체를 저장할 수 있다.*/
+
 class Product2 {
     int price;
     int bonusPoint;
@@ -97,9 +101,12 @@ public class Ex7_9_객체배열_다형성 {
         buyer.buy(new Tv2());
         buyer.summary();
         System.out.println("뭐가 출력될까? " + buyer.cart[0]);
+        System.out.println("뭐가 출력될까? " + buyer.cart[5]);
+        System.out.println("뭐가 출력될까? " + buyer.cart[6]); //null
+//        System.out.println("뭐가 출력될까? " + buyer.cart[10]); //ArrayIndexOutOfBoundsException 발생
 
 
-        /* 객체 배열 다형성 그림 그릴 수 있어야 한다.
+        /* ★ 객체 배열 다형성 그림 그릴 수 있어야 한다.
         Product p1 = new Tv1();
         Product p2 = new Computer();
         Product p3 = new Audio();
