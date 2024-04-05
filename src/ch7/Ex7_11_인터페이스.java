@@ -53,6 +53,7 @@ interface PlayingCard {
 }
 
 //인터페이스 끼리도 아래처럼 상속을 해.
+//대신 타입은 클래스가 아니라 인터페이스로만 가능해.
 interface Fightable extends Movable, Attackable {} //적혀있진 않지만 멤버가 move, attack 메서드 포함해서 2개야.
 interface Movable {
     void move(int x, int y);
