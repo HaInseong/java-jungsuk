@@ -13,35 +13,6 @@ package ch7;
  * jdk1.8 이후 상수, static, default 메서드가 인터페이스의 구성요소에 추가 되었지만, 핵심은 추상메서드의 집합이라는 것이야.
  * */
 
-class Point3 {
-    int x, y;
-
-    Point3(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-}
-
-class Point3D extends Point3 {
-    int z;
-    Point3D(int x, int y, int z) {
-        super(x, y);
-        this.z = z;
-    }
-}
-
-public class Ex7_11_인터페이스 {
-    public static void main(String[] args) {
-        Point3D d = new Point3D(10, 20 , 30);
-
-        System.out.println(d.x);
-        System.out.println(d.y);
-        System.out.println(d.z);
-    }
-}
-
-
-
 interface PlayingCard {
     public static final int SPADE = 4;
     final int DIAMOND = 3; //public static final int DIAMOND = 3; 생략가능
@@ -62,3 +33,62 @@ interface Attackable {
     void attack(Unit u);
 }
 
+/*인터페이스는 껍데기
+ * 알매이가 바뀌어도 껍데기는 그대로라서 사용법은 같다.
+ * A가 B에 의존하다
+ * A가 B를 사용하다
+ * 의존하는 경우 B를 바꾸면 A도 바꿔야하는데
+ * A가 의존하던 B를 인터페이스 껍데기로 B를 감쌌을 경우
+ * 알맹이가 된 B를 C로 바꿔도 A클래스는 변경할 게 없다.
+ * 인터페이스를 사용한 경우를 느슨한 결합이라고 하는데 이 경우 변경에는 유리하지만 강결합보다는 느리다.*/
+
+public class Ex7_11_인터페이스 {
+    public static void main(String[] args) {
+        A a = new A();
+        a.method(new B()); //A가 B를 사용(A가 B에 의존)
+        a.method(new C());
+
+
+
+    }
+}
+
+//class A {
+//    public void method(B b) {
+//        b.methodB();
+//    }
+//}
+//
+//class B {
+//    public void methodB() {
+//        System.out.println("methodB()");
+//    }
+//}
+
+interface I {
+    public void methodB();
+}
+
+class A {
+    //★ 어떤 클래스를 의존하던 인터페이스를 매개변수로 받으므로 A클래스의 변경은 없다.
+    public void method(I i) { //인터페이스 I를 구현한 넘들만 들어와라.
+        i.methodB();
+    }
+}
+
+class B implements I {
+    public void methodB() {
+        System.out.println("methodB()");
+    }
+}
+
+class C implements I {
+    public void methodB() {
+        System.out.println("methodC() in C");
+    }
+}
+
+
+/*원격 프로그램 실행
+* 1. 프로그램 등록 = 외부에서 실행할 수 있게
+* 2. URL과 프로그램을 연결 = REST API*/
