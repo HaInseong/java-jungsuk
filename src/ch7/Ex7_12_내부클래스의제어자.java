@@ -29,6 +29,8 @@ public class Ex7_12_내부클래스의제어자 {
     static class StaticInner {
         int iv = 200;
         static int cv = 200; // ★ 여기서 핵심은 static 클래스만 static 멤버를 가질 수 있다는 것.
+        // 그리고 static 내부 클래스에서는 외부 클래스의 인스턴스 멤버에 접근할 수 없어.
+        // 왜냐하면, 객체가 생성되어 있을 수도 있고 안되어 있을 수도 있기 때문에 접근제한을 걸어둔거야.
     }
 
     void myMethod() {
@@ -36,12 +38,17 @@ public class Ex7_12_내부클래스의제어자 {
             int iv = 300;
             //static int cv = 300; // Error! static 변수를 선언할 수 없다.
             final static int CONST = 300; // final static은 상수이므로 허용.
+            // 지역 내부 클래스의 static 상수는 메서드 내에서만 사용가능.
         }
+        int i = LocalInner.CONST; // OK
     }
 
     public static void main(String[] args) {
         System.out.println(InstanceInner.CONST);
         System.out.println(StaticInner.cv);
+        //System.out.println(LocalInner.CONST); // Error 발생
+        // 메서드 지역 내부 클래스의 멤버는 메서드 안에서만 사용 가능하다.
+        // 메서드 지역 변수는 메서드 안에서만 사용 가능한 것이랑 같은 이치.
     }
 
 }
