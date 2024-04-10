@@ -1,6 +1,6 @@
 package ch8;
 
-public class Ex8_1_try_catch4 {
+public class Ex8_1_try_catch4_비정상종료 {
     public static void main(String[] args) {
         System.out.println(1);
         System.out.println(2);

@@ -12,7 +12,8 @@ public class Ex8_4_예외만들기 {
     public static void main(String[] args) {
         try {
             Exception e = new Exception("고의로 발생시켰음.");
-            throw e;
+            throw e; // ★ 예외객체 주소를 catch로 던진다
+            // throw new Exception("고의로 발생시켰음.");
         } catch (Exception e) {
             System.out.println("에러 메시지 : " + e.getMessage());
             e.printStackTrace();
