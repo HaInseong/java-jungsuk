@@ -1,8 +1,8 @@
-package ch8;
+package ch7;
 
-class A {
+class A1 {
     int i;
-    public A(int i) {
+    public A1(int i) {
         this.i = i;
     }
     int get() {
@@ -10,9 +10,9 @@ class A {
     }
 }
 
-class B extends A {
+class B1 extends A1 {
     int i;
-    public B(int i) {
+    public B1(int i) {
         super(2*i);
         this.i = i;
     }
@@ -21,11 +21,11 @@ class B extends A {
     }
 }
 
-public class Test {
+public class Test_다형성 {
     public static void main(String[] args) {
-        A ab = new B(7);
+        A1 ab = new B1(7);
         System.out.println(ab.i + ab.get());
-        B ba = (B)ab; // 다형성 구현
+        B1 ba = (B1)ab; // 다형성 구현
         System.out.println(ba.i + ba.get());
         System.out.println(ab.get()+","+ba.get());
     }

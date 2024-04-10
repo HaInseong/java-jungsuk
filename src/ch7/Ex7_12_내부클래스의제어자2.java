@@ -7,8 +7,8 @@ public class Ex7_12_내부클래스의제어자2 {
     InstanceInner iv = new InstanceInner(); // 인스턴스멤버끼리는 직접 접근 가능
     static StaticInner cv = new StaticInner(); // static 멤버끼리는 직접 접근 가능
 
-    static void staticMethod() { // static멤버는 인스턴스 멤버에 직접 접근 불가
-//        InstanceInner obj1 = new InstanceInner();
+    static void staticMethod() {
+//        InstanceInner obj1 = new InstanceInner(); // ★ static멤버는 인스턴스 멤버에 직접 접근 불가
         StaticInner obj2 = new StaticInner();
 
         Ex7_12_내부클래스의제어자2 outer = new Ex7_12_내부클래스의제어자2(); // 인스턴스 클래스는 외부 클래스를 먼저 생성해야 생성 가능
