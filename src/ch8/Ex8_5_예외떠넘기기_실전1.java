@@ -19,6 +19,6 @@ public class Ex8_5_예외떠넘기기_실전1 {
         }
         File f = new File(fileName);
         f.createNewFile(); // File객체의 createNewFile메서드를 이용해서 실제 파일을 생성한다.
-        return f; // 생성된 객체의 참조를 반환한다.
+        return f; // 생성된 객체의 참조를 반환한다..
     }
 }
