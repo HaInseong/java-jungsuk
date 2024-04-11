@@ -42,7 +42,7 @@ package ch8;
  * ArrayIndexOutOfBoundsException 배열 범위 벗어낫을 때 발생하는 예외
  */
 
-public class Ex8_1_예외처리_개념정리 {
+public class Ex8_1_예외처리_개념 {
     public static void main(String[] args) {
         System.out.println(args[0]); // 컴파일 시 구문에는 문제 없으므로 통과 but 런타임 에러 발생
     }
