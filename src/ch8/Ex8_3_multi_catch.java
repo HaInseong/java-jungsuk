@@ -1,7 +1,7 @@
 package ch8;
 
-// ExceptionA, ExceptionB 예외 객체가 존재하지 않으므로 에러 남.
-// 그래도 multi catch 학습하기 위해서 일부러 만든 예제
+// ExceptionA, ExceptionB 예외 객체가 존재하지 않으므로 오류 나서 주석처리 해뒀다.
+// 오류나더라도 multi catch 학습하기 위해서 일부러 만든 예제니 살펴보도록.
 
 //public class Ex8_3_multi_catch {
 //    public static void main(String[] args) {

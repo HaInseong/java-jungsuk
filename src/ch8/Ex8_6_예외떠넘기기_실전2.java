@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Ex8_6_예외떠넘기기_실전2 {
     public static void main(String[] args) {
-            File f = createFile(""); // 예외 발생 -> 예외처리 할 catch블럭 찾는다.
+            File f = createFile("");
             System.out.println(f.getName()+" 파일이 성공적으로 생성되었습니다.");
     }
 
@@ -17,7 +17,7 @@ public class Ex8_6_예외떠넘기기_실전2 {
             if (fileName==null || fileName.equals("")) {
                 throw new Exception("파일 이름이 유효하지 않습니다.");
             }
-        } catch (Exception e) {
+        } catch (Exception e) { // ★ 위에 생성된 예외 객체를 catch에서 받는다.
             fileName = "제목없음.txt";
         } finally {
             System.out.println("finally블록은 예외가 발생하던, 하지 않던 무조건 수행된다.");

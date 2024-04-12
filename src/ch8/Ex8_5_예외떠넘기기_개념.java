@@ -19,7 +19,7 @@ package ch8;
 
 public class Ex8_5_예외떠넘기기_개념 {
     // ★ main메서드까지 예외를 떠넘기면 프로그램이 비정상 종료 된다.
-    // main메서드를 호출한 JVM이 예외를 넘겨 받고, printStack메서드를 실행한다.
+    // main메서드를 호출한 JVM이 예외를 넘겨 받고, printStack메서드를 실행하고 죽는다.
     public static void main(String[] args) throws Exception{
 //        try {
             method1(); // 같은 클래스 내의 static멤버이므로 객체 생성없이 직접 호출 가능.
@@ -28,7 +28,7 @@ public class Ex8_5_예외떠넘기기_개념 {
 //        }
     }
 
-    static void method1() throws Exception {
+    static void method1() throws Exception { // 나 호출했는데 Exception 예외 발생하면 내가 직접처리 하지 않고 호출한 곳에 던질거야.
         method2();
     }
 

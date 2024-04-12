@@ -6,7 +6,7 @@ public class Ex8_5_예외떠넘기기_실전1 {
     public static void main(String[] args) {
         try {
 //            File f = createFile("test2.txt");
-            File f = createFile(""); // 예외 발생 -> 예외처리 할 catch블럭 찾는다.
+            File f = createFile(""); // 예외 발생 시 -> 예외처리 할 catch블럭 찾는다.
             System.out.println(f.getName()+" 파일이 성공적으로 생성되었습니다.");
         } catch (Exception e) {
             System.out.println(e.getMessage()+" 다시 입력해 주시기 바랍니다.");
