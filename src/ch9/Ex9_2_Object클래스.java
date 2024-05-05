@@ -59,7 +59,7 @@ class Value2 {
     }
 }
 
-public class Ex9_1_Object클래스 {
+public class Ex9_2_Object클래스 {
     public static void main(String[] args) {
 
         Value v1 = new Value(10);

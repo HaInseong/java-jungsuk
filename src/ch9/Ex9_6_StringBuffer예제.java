@@ -1,6 +1,6 @@
 package ch9;
 
-public class Ex9_1_StringBuffer예제 {
+public class Ex9_6_StringBuffer예제 {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer("01");
         StringBuffer sb2 = sb.append(23); // StringBuffer가 Char[]이기 때문에 다 문자열로 저장된다.

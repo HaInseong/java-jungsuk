@@ -18,7 +18,7 @@ package ch9;
  * 그래서 StringBuffer를 String으로 변환 후에 equals()로 비교해야 한다.
  */
 
-public class Ex9_1_StringBuffer클래스 {
+public class Ex9_5_StringBuffer클래스 {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer("abc");
         System.out.println(sb);

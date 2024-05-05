@@ -27,7 +27,7 @@ package ch9;
  * 내용이 없는 문자열, 크기가 0인 char형 배열을 저장하는 문자열
  * 자바에서는 길이가 0인 배열을 생성하는 것은 어느 타입이나 가능
  */
-public class Ex9_1_String클래스 {
+public class Ex9_3_String클래스 {
 
 //    @Override
 //    public boolean equals(Object obj) {
