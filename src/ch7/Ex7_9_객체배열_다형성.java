@@ -42,10 +42,11 @@ class Audio2 extends Product2 {
     }
 }
 
+// 카트로 객체배열 만들기
 class Buyer2 {
     int money = 1000;
     int bonusPoint = 0;
-    Product2[] cart = new Product2[10];
+    Product2[] cart = new Product2[10]; // 객체배열 담을 카트 생성
     int i = 0;
 
     void buy(Product2 p) {
@@ -56,11 +57,12 @@ class Buyer2 {
         //잔액이 충분하다면
         money -= p.price;
         bonusPoint = p.bonusPoint;
-        cart[i++] = p;
-        System.out.println(p+"을/를 구매하셨습니다.");
+        cart[i++] = p; // 들어온 객체를 배열에 담고 전역변수 i++ 처리하여 다음 인덱스로 넘기기
+        System.out.println(p+"을/를 구매하셨습니다."); // toString 오버라이딩 되어 있어서 해당 객체 주소가 아닌 이름으로 출력
         System.out.println("★남은 잔액은 " + money + "입니다.★");
     }
 
+    // 객체배열에 담긴 객체들 정보 보여주기
     void summary() {
         int sum = 0;
         String itemList = "";
@@ -68,16 +70,17 @@ class Buyer2 {
         for(int i=0; i<cart.length; i++) {
             if(cart[i]==null) break;
             sum += cart[i].price;
-            if(i<cart.length-1 && cart[i+1] != null) { //★ 마지막 인덱스보다 i가 작지 않다면, 그건 i가 최소 마지막 인덱스에 도달했다는 의미야.
-                itemList += cart[i] + ", "; //주소값이 담기는건가?
-                //맞어. println 메서드는 참조변수가 매개변수로 오면 자동으로 toString을 호출해주잖아?
-                //그런데 각각의 상품 클래스들은 toString메서드가 오버라이딩 되어 있어.
-                //그럼 상품명을 출력하게 될 거야.
+            if(i<cart.length-1 && cart[i+1] != null) { // ★ 마지막 인덱스보다 i가 작지 않다면, i가 마지막 인덱스에 도달했다는 의미야.
+                itemList += cart[i] + ", "; // 배열을 인덱스로 호출하면 주소값이 담기는건가?
+                // 맞어. println 메서드는 참조변수가 매개변수로 오면 자동으로 toString을 호출해주잖아?
+                // 그런데 각각의 상품 클래스들은 toString메서드가 오버라이딩 되어 있어.
+                // 그래서 상품명을 출력하게 될 거야.
             } else {
                 itemList += cart[i];
             }
 
         }
+        System.out.println(cart[1]);
         System.out.println("==========================================");
 
         System.out.println("구입하신 물품의 총금액은 " + sum + "입니다.");
