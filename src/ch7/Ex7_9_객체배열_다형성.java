@@ -71,7 +71,7 @@ class Buyer2 {
             if(cart[i]==null) break;
             sum += cart[i].price;
             if(i<cart.length-1 && cart[i+1] != null) { // ★ 마지막 인덱스보다 i가 작지 않다면, i가 마지막 인덱스에 도달했다는 의미야.
-                itemList += cart[i] + ", "; // 배열을 인덱스로 호출하면 주소값이 담기는건가?
+                itemList += cart[i] + ", "; // 배열을 인덱스로 호출하면 주소값이 담기는건가? Ex) cart[i].toString
                 // 맞어. println 메서드는 참조변수가 매개변수로 오면 자동으로 toString을 호출해주잖아?
                 // 그런데 각각의 상품 클래스들은 toString메서드가 오버라이딩 되어 있어.
                 // 그래서 상품명을 출력하게 될 거야.
