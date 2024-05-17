@@ -4,16 +4,16 @@ public class Student {
     int studentId;
     String studentName;
 
-    Subject korean;
-    Subject math;
+    Subject korean = new Subject();
+    Subject math = new Subject();
 
     public Student(int studentId, String studentName) {
         this.studentId = studentId;
         this.studentName = studentName;
 
-        korean = new Subject(); // Subject Korean = new Subject(); 하면 안된다. 생성해둔 전역변수에 담아야함.
-        // Subject Korean = new Subject(); 이렇게하면 생존주기가 생성자 안에서만임.
-        math = new Subject();
+//        korean = new Subject(); // ★ Subject Korean = new Subject(); 하면 안된다. 생성해둔 전역변수에 담아야함.
+//        // Subject Korean = new Subject(); 이렇게하면 생존주기가 생성자 안에서만임.
+//        math = new Subject();
     }
 
     public void setKorean(String subject, int score) {
