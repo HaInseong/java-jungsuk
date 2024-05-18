@@ -11,5 +11,6 @@ public class Test {
         s1.showInfo();
         b100.showInfo();
         sg.showInfo();
+        System.out.println(sg); // toString Override
     }
 }
