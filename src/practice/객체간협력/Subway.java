@@ -24,6 +24,6 @@ public class Subway {
                 "subwayNumber=" + subwayNumber +
                 ", fare=" + fare +
                 ", passengerCount=" + passengerCount +
-                '}';
+                "}";
     }
 }
