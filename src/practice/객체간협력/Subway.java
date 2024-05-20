@@ -19,7 +19,7 @@ public class Subway {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // toString 자동 생성 가능
         return "Subway{" +
                 "subwayNumber=" + subwayNumber +
                 ", fare=" + fare +
