@@ -2,7 +2,7 @@ package ch11;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+// git clone test
 public class Ex11_3_2_ArrayListEx {
     public static void main(String[] args) {
         ArrayList list1 = new ArrayList(10);
