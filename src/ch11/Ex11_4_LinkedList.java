@@ -23,6 +23,13 @@ package ch11;
  * Doubly LinkedList: 이전 노드의 위치까지 저장하는 참조변수를 가지고 있다.
  * Doubly Circular LinkedList: 첫노드의 이전 참조 변수에 가장 마지막 노드의 주소가 저장된다.(실제 사용 X)
  */
+
+/**
+ * ArrayList vs LinkedList < 배열 기반 vs 연결 기반 >
+ * 1. 순차적으로 데이터를 추가/삭제 - ArrayList가 빠름
+ * 2. 비순차적으로 데이터를 추가/삭제 - LinkedList가 빠름(대신 순차적인 데이터 추가/삭제는 ArrayList가 빠름)
+ * 3. 접근시간 - ArrayList가 빠름 / LinkedList는 노드가 많을수록 하나씩 다 방문해야 한다.
+ */
 public class Ex11_4_LinkedList {
 
 }
