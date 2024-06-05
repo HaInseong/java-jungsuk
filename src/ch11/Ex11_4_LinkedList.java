@@ -31,7 +31,6 @@ package ch11;
  * 3. 접근시간 - ArrayList가 빠름 / LinkedList는 노드가 많을수록 하나씩 다 방문해야 한다.
  */
 
-// git test for new laptop
 public class Ex11_4_LinkedList {
 
 }
